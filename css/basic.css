@@ -1,0 +1,387 @@
+li {
+    line-height: 20px;
+}
+
+.container{
+	padding-top: 91px;
+	width: 960px;
+	height: auto;
+	margin: auto;
+	/*background-color: darkgray;*/
+}
+
+.container-left{
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 86px 0 0;
+    padding: 0 0 30px;
+    width: 280px;
+    overflow: auto;
+	height: auto;
+    /*background-color: beige;*/
+}
+
+.container-left > ul > li{
+	height: 52px;
+	vertical-align: middle;
+	/*background-color: firebrick;*/
+	line-height: 52px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+
+.container-left > ul > li:hover{
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+
+
+.container-left > ul > li img{
+	height: 40px;
+	margin-right: 10px;
+}
+
+
+.active{
+	background-color: #f0f0f0;
+	border-radius: 4px;
+}
+
+.container-right{
+	position: relative;
+	top: -5px;
+	float: right;
+	width: 680px;
+	height: auto;
+	/*background-color: cadetblue;*/
+	padding-left: 40px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.base tr > td:first-child,
+.infomation tr > td:first-child{
+	width: 150px;
+}
+
+.base tr > td,
+.infomation tr > td{
+	width: 475px;
+}
+
+.base tr:first-child {
+    border: none;
+}
+
+.container-right tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.container-right td {
+    padding: 20px 0;
+}
+
+.container-right .top-line {
+    padding-top: 0;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.container-right .avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-hollow {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 40px;
+    background: none;
+    outline: none;
+}
+
+.btn-hollow {
+    border: 1px solid rgba(59,194,29,.7);
+    color: #42c02e!important;
+}
+
+.container-right .btn-hollow {
+    font-size: 14px;
+}
+
+.container-right .hide {
+    position: absolute;
+    display: block!important;
+    width: 82px;
+    opacity: 0;
+}
+
+.setting-title {
+    font-size: 15px;
+    color: #969696;
+}
+
+.container-right input[type=text] {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+}
+
+.setted div {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.container-right .setted a {
+    margin: 0 0 0 3px;
+    font-size: 14px;
+    color: #969696;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.container-right .cancel-bind {
+	display: none;
+}
+
+.setting-save {
+    width: 100px;
+    margin: 30px 0 60px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-success {
+    border-radius: 40px;
+    color: #fff;
+    background-color: #42c02e;
+    border-color: #42c02e;
+}
+
+.infomation span {
+    margin: 0 20px 0 6px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.container-right .infomation textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: hsla(0,0%,71%,.1);
+    display: block;
+    resize: none;
+    outline-style: none;
+}
+
+.container-right .infomation input[name=website] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.infomation .weixin-qrcode img {
+    width: 84px;
+    height: 84px;
+    margin-right: 10px;
+}
+
+
+.infomation .weixin-qrcode .cancel-bind {
+    padding-left: 8px;
+    font-size: 12px;
+}
+
+
+.modal-dialog{
+	position: absolute;
+	width: 420px;
+	/*height: 314px;*/
+	height: auto;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+.modal-header{
+	padding: 20px;
+	border-bottom: 1px solid #e5e5e5;
+	height: 65px;
+}
+
+
+.modal-title{
+	float: left;
+	font-size: 17px;
+    font-weight: 700;
+    color: #333;
+}
+
+.modal-header > button{
+	float: right;
+	border: none;
+	background-color: #FFF;
+	cursor: pointer;
+	outline: none;
+}
+
+.modal-header > button > img{
+	height: 20px;
+}
+
+.modal-body{
+	padding-top: 14px;
+	overflow: visible;
+	padding: 20px 20px 0;
+	position: relative;
+}
+
+.modal-body .tips {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 14px;
+}
+
+.
+.mobile-reset-password .input-prepend,
+.email-reset-password .input-prepend,
+.unbind_email .input-prepend{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.mobile-reset-password .overseas input,
+.email-reset-password .overseas input,
+.unbind_email .overseas input{
+    padding: 4px 12px 4px 35px!important;
+    border-bottom: none!important;
+    border-radius: 4px 4px 0 0!important;
+}
+
+.mobile-reset-password .input-prepend input,
+.email-reset-password .input-prepend input,
+.unbind_email .input-prepend input{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    background-color: #fff;
+    vertical-align: middle;
+    font-size: 14px;
+    background-color: hsla(0,0%,71%,.1);
+}
+
+.mobile-reset-password .btn-in-resend,
+.email-reset-password .btn-in-resend,
+.unbind_email .btn-in-resend{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 36px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    background-color: #42c02e;
+    border-radius: 20px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.mobile-reset-password .sign-in-button,
+.email-reset-password .sign-in-button,
+.unbind_email .sign-in-button{
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    background: #3194d0;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    clear: both;
+}
+
+.modal-body .email-contact{
+	margin-bottom: 25px;
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+.modal-body .email-contact span{
+	margin: 0 10px 0 6px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #333;
+}

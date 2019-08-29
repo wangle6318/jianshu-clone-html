@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="">
+				<a class="logo" href=""><img src="img/logo.png" alt="" /></a>
+				<div class="navba-collapse">
+					<li style="display: none;"><a href="index.html">首页</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="follow.html">关注</a></li>
+					<li><a href="">消息</a></li>
+					<li class="search">
+						<form action="" method="post">
+							<input class="search-input" type="text" name="" id="" value="" autocomplete="off" placeholder="搜索" />
+							<a href="javascript:void(0);" class="search-btn">
+								<img src="img/search.svg"/>
+							</a>
+						</form>
+					</li>
+				</div>
+				<a class="write-btn" href="write.html">写文章</a>
+				
+				<div class="user" style="display: none;">
+					<a href="signin.html" id="sign_up">注册</a>
+					<a href="signup.html" id="sign_in">登陆</a>
+				</div>
+				
+				<div class="login-user" style="display: block;">
+					<a class="user-img" href=""><img src="img/head_img.jfif"/></a>
+					<ul class="drop-menu">
+						<li><a href="info.html">我的主页</a></li>
+						<li><a href="collection.html">收藏的文章</a></li>
+						<li><a href="">喜欢的文章</a></li>
+						<li><a href="">设置</a></li>
+						<li><a href="">帮助与反馈</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="container-left">
+				<ul>
+					<li class="active">
+						<a href="#">
+							<img src="img/ic-basic.svg"/>
+							<span>基础设置</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/ic-profile.svg"/>
+							<span>个人资料</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container-right">
+				<table style="display: none;">
+					<tbody class="base">
+						<tr>
+							<td class="top-line">
+								<div class="avatar">
+									<img src="img/head_img.jfif"/>
+								</div>
+							</td>
+							<td class="top-line">
+								<a class="btn btn-hollow">
+									<input type="file" unselectable="on" class="hide"/>
+									更改头像
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="setting-title">昵称</td>
+							<td><input type="text" placeholder="请输入昵称" value="与诗"/></td>
+						</tr>
+						<tr>
+							<td class="setting-title">电子邮件</td>
+							<!--<td>
+								<button class="btn btn-hollow" id="bind-email">点击绑定</button>
+							</td>-->
+							<td class="setted">
+								<div>1085987931@qq.com</div>
+								<a class="cancel-bind" id="cancel-bind-email">取消绑定</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="setting-title">手机</td>
+							<!--<td style="display: none;">
+								<button class="btn btn-hollow" id="bind-phone">点击绑定</button>
+							</td>-->
+							<td class="setted">
+								<div>15000736318</div>
+								<a class="cancel-bind" id="bind-phone">更换绑定的手机号</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table style="display: block;">
+					<tbody class="infomation">
+						<tr>
+							<td class="top-line setting-title">性别</td>
+							<td class="top-line">
+								<input type="radio" value="1" name="sex" checked="checked"/>
+								<span>男</span>
+								<input type="radio" value="2" name="sex"/>
+								<span>女</span>
+								<input type="radio" value="3" name="sex"/>
+								<span>保密</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="setting-title">个人简介</td>
+							<td>
+								<form>
+									<textarea placeholder="填写你的个人简介"></textarea>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td class="setting-title">个人网站</td>
+							<td>
+								<form>
+									<input type="text" name="website" placeholder="http://你的网址"/>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td class="setting-title">微信二维码</td>
+							<td class="weixin-qrcode">
+								<input type="file" class="hide" />
+								<img src="img/head_img.jfif"/>
+								<a class="btn btn-hollow">
+									<input type="file" class="hide" />更换图片
+								</a>
+								<a class="cancel-bind">删除</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<input type="submit" class="btn btn-success setting-save" value="保存"/>
+			</div>
+			
+			<div class="modal-dialog" style="display: none;">
+				<div class="modal-header">
+					<h4 class="modal-title">安全验证</h4>
+					<button type="button" class="close"><img src="img/close.svg"/></button>
+				</div>
+				<div class="modal-body">
+					<div class="tips">
+						为了保证你的账号安全，请先验证身份，验证成功后进行下一步操作，验证码10分钟内有效
+					</div>
+					<div class="tips email-contact">
+						<h3>
+							<span>用邮箱</span>1085987931@qq.com
+							<span>验证</span>
+						</h3>
+					</div>
+					<form class="email-reset-password">
+						<div class="input-prepend restyle">
+							<div class="input-prepend security-up-code">
+								<input type="text" placeholder="验证码" />
+								<a class="btn-in-resend">发送验证码</a>
+							</div>
+							<a class="sign-in-button">确认</a>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/navbar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

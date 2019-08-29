@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/article.css"/>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div>
+				<a class="logo" href=""><img src="img/logo.png" alt="" /></a>
+				<div class="navba-collapse">
+					<li style="display: none;"><a href="">首页</a></li>
+					<li><a href="">发现</a></li>
+					<li><a href="">关注</a></li>
+					<li><a href="">消息</a></li>
+					<li class="search">
+						<form action="" method="post">
+							<input class="search-input" type="text" name="" id="" value="" autocomplete="off" placeholder="搜索" />
+							<a href="javascript:void(0);" class="search-btn">
+								<img src="img/search.svg"/>
+							</a>
+						</form>
+					</li>
+				</div>
+				<a class="write-btn" href="#">写文章</a>
+				
+				<div class="user" style="display: none;">
+					<a href="" id="sign_up">注册</a>
+					<a href="" id="sign_in">登陆</a>
+				</div>
+				
+				<div class="login-user">
+					<a class="user-img" href=""><img src="img/head_img.jfif"/></a>
+					<ul class="drop-menu">
+						<li><a href="">我的主页</a></li>
+						<li><a href="">收藏的文章</a></li>
+						<li><a href="">喜欢的文章</a></li>
+						<li><a href="">设置</a></li>
+						<li><a href="">帮助与反馈</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="note">
+			<div class="post">
+				<div class="article">
+					<h1 class="title">Python利用pandas处理Excel数据的应用</h1>
+					<div class="author">
+			          	<a class="avatar" href="/u/8f2987e2f9fb">
+			            	<img src="//upload.jianshu.io/users/upload_avatars/13717038/67774fa9-29e9-431e-932b-f10b746c9466?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96" alt="96">
+						</a>          
+						<div class="info">
+			            <span class="name"><a href="/u/8f2987e2f9fb">我爱学python</a></span>
+			            <!-- 关注用户按钮 -->
+			            <a class="btn btn-success follow"><span>关注</span></a>
+			            <!-- 文章数据信息 -->
+			            <div class="meta">
+						
+			              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+			            	<span class="publish-time">2019.04.16 15:59</span>
+			              	<span class="wordage">字数 907</span>
+			            	<span class="views-count">阅读 302</span><span class="comments-count">评论 0</span><span class="likes-count">喜欢 12</span></div>
+			          	</div>
+			          <!-- 如果是当前作者，加入编辑按钮 -->
+			        </div>
+					<div class="show-content">
+						
+					</div>
+						
+					<div class="follow-detail">			
+				    	<div class="info">
+				        	<a class="avatar" href="/u/c4165d16d0ad">
+				          		<img src="img/head_img.jfif" alt="180">
+							</a>
+							<a class="btn btn-success follow"><span>关注</span></a>
+				        	<a class="title" href="/u/c4165d16d0ad">北美之北</a>
+				        	<p>写了 406317 字，被 90243 人关注，获得了 28910 个喜欢</p>
+				      	</div>
+				        <div class="signature">
+				        	是：老司机/奶爸/吃货 写：职场的坑/父女的哏/美食的魂 版权合作事宜请联系行距文化：pub@hangju-pub.com
+				        </div>
+					</div>
+					
+					<div class="comment-list">
+						<div>
+							<form class="new-comment">
+								<a href="javascript:void(0);" class="avatar"><img src="img/head_img.jfif"/></a>
+								<textarea name="" id="" placeholder="写下你的评论..."></textarea>
+								<div class="write-function-block" style="display: none;">
+									<a href="javascript:void(0);" class="btn btn-send">发送</a>
+									<a href="javascript:void(0);" class="cancel cancel-comment">取消</a>
+								</div>
+							</form>
+						</div>
+						<div class="normal-comment-list">
+							<div>
+								<div>
+									<div class="top-title">
+										<span>评论</span>
+										<!--只在有评论的时候显示  只看作者选项-->
+										<a href="javascript:void(0);" class="author-only">只看作者</a>
+										<a href="javascript:void(0);" class="close-btn" style="display: none;">关闭评论</a>
+									</div>
+									<div class="no-comment" style="display: block;"></div>
+									<div class="text">
+										智慧如你，不想<a href="javascripy:void(0);">发表一点想法</a>咩
+									</div>
+								</div>
+								<div class="comment">
+									<div class="comment-content">
+										<div class="author">
+											<div class="v-tooltip-container">
+												<div class="v-tooltip-content">
+													<a href="javascript:void(0);" class="avatar"><img src="img/head_img.jfif" alt="" /></a>
+												</div>
+											</div>
+											<div class="info">
+												<a href="javascript:void(0);" class="name">triplestudio</a>
+												<div class="meta">
+													<span>2019.05.08 20:45</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="comment-wrap">
+											<p>有这样的工具真好</p>
+											<div class="tool-group">
+												<a href="javascript:void(0);" class="thumbsup">
+													<img src="img/thumbsup.svg"/>
+													<span>赞</span>
+												</a>
+												<a href="javascript:void(0);" class="reply">
+													<img src="img/comment.svg"/>
+													<span>回复</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sub-comment-list">
+										<div class="sub-comment">
+											<p>
+												<span>四爷再此</span>
+												<span>是的，只能改一些基础的颜色值，有的样式改不到，我项目里面单独搞了一个css文件来覆盖的，还好ui设计没有太大的差异，改得不多。</span>
+											</p>
+										</div>
+										<div style="display: none;" class="reply-form">
+											<form class="new-comment">
+												<textarea placeholder="写下你的评论..."></textarea> 
+												<div class="write-function-block">
+													<a href="javascript:void(0);" class="btn btn-send">发送</a>
+													<a href="javascript:void(0);" class="cancel">取消</a>
+												</div>
+											</form> 
+										</div>
+									</div>
+								</div>
+								<div class="comment">
+									<div class="comment-content">
+										<div class="author">
+											<div class="v-tooltip-container">
+												<div class="v-tooltip-content">
+													<a href="javascript:void(0);" class="avatar"><img src="img/head_img.jfif" alt="" /></a>
+												</div>
+											</div>
+											<div class="info">
+												<a href="javascript:void(0);" class="name">triplestudio</a>
+												<div class="meta">
+													<span>2019.05.08 20:45</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="comment-wrap">
+											<p>有这样的工具真好</p>
+											<div class="tool-group">
+												<a href="javascript:void(0);" class="thumbsup">
+													<img src="img/thumbsup.svg"/>
+													<span>赞</span>
+												</a>
+												<a href="javascript:void(0);" class="reply">
+													<img src="img/comment.svg"/>
+													<span>回复</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="sub-comment-list">
+										<div class="sub-comment">
+											<p>
+												<span>四爷再此</span>
+												<span>是的，只能改一些基础的颜色值，有的样式改不到，我项目里面单独搞了一个css文件来覆盖的，还好ui设计没有太大的差异，改得不多。</span>
+											</p>
+										</div>
+										<div style="display: none;" class="reply-form">
+											<form class="new-comment">
+												<textarea placeholder="写下你的评论..."></textarea> 
+												<div class="write-function-block">
+													<a href="javascript:void(0);" class="btn btn-send">发送</a>
+													<a href="javascript:void(0);" class="cancel">取消</a>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="side-tool">
+			<ul>
+				<li style="display: none;"><a class="function-button gotop"><img src="img/top.svg"/></a></li>
+				<li><a class="function-button mark"><img src="img/mark.svg"/></a></li>
+				<li><a class="function-button love"><img src="img/love.svg"/></a></li>
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/navbar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/article.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
